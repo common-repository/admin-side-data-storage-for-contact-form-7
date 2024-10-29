@@ -1,0 +1,143 @@
+/**
+ * All of the CSS for your admin-facing functionality should be
+ * included in this file.
+ */
+
+.zestard-frm-setting-consent-tab .ztdcfcf-tab {
+    display: none;
+}
+
+.zestard-frm-setting-consent-tab .ztdcfcf-tab.active {
+    display: block;
+}
+
+#columnListId span {
+    min-width: 150px;
+    display: inline-block;
+}
+
+.zestard-frm-setting-consent-tab ul {
+	border-top: 1px solid;
+}
+
+.zestard-frm-setting-consent-tab li {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid;
+    font-size: 14px;
+    background: #fff;
+    text-transform: capitalize;
+}
+
+div#columnListId .zt-dcfcf-column {
+    border: 1px solid;
+    padding: 5px 5px 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: move;
+    font-weight: 500;
+    width: 50%;
+    background-color: #fff;
+    text-transform: capitalize;
+}
+
+#columnListId .zt-column-title.ui-sortable-handle {
+    padding-left: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+#columnListId span.view{
+	text-align: center;
+}
+
+#columnListId .zt-column-title {
+    color: #fff;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid;
+    padding: 10px;
+    background: #000;
+    width: 50%;
+}
+
+.tabs.zestard-frm-setting-consent-tab a {
+    text-decoration: none;
+}
+
+.instruction{
+    margin: 20px 0;
+    color: #000;
+    font-size: 15px;
+    border: 1px solid;
+    padding: 10px;
+    background: #fff;
+    width: 50%;
+    line-height: 30px;
+}
+
+.data_filter {
+    display: flex;
+}
+
+.data_filter input[type="date"] {
+    margin-right: 10px;
+}
+
+input#post-query-submit {
+    margin: 0 10px;
+}
+
+.zt_dcfcf_admin_list{
+    grid-template-columns: auto !important;
+  overflow: scroll;
+}
+
+@media screen and (min-width: 1600px){
+    .wrap .welcome-panel .welcome-panel-column-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .welcome-panel .welcome-panel-column-container h3 {
+        width: 100%;
+    }
+}
+
+@media  (min-width: 320px) and (max-width: 425px) {
+
+    .instruction, #columnListId .zt-column-title, div#columnListId .zt-dcfcf-column {
+        width: 90%;
+    }
+
+    #columnListId span {
+        min-width: 130px;
+    }
+
+    input.button.button-primary.copy-shortcode{
+        margin-top: 15px;
+    }
+
+}
+
+@media  (min-width: 320px) and (max-width: 768px) {
+
+    .data_filter {
+        display: block;
+    }
+
+    .data_filter div {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media  (min-width: 1440px) and (max-width: 2560px) {
+
+    .instruction, #columnListId .zt-column-title, div#columnListId .zt-dcfcf-column {
+        width: 25%;
+    }
+
+    .zt_dcfcf_admin_list{
+        grid-template-columns: auto !important;
+    }
+}
